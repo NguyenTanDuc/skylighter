@@ -1,0 +1,8 @@
+<li>
+  House <strong><%= house.name %></strong> in <%= house.city %>
+  <ul>
+    <% house.characters.each do |char| %>
+      <li><%= char.name %></li>
+    <% end %>
+  </ul>
+</li>
