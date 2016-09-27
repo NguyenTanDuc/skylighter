@@ -1,5 +1,5 @@
 class HousesController < ApplicationController
   def index
-    @houses = House.all
+    @houses = House.includes(:characters)
   end
 end
